@@ -15,10 +15,10 @@ module.exports = {
     MSG_LOG: convertToBool(process.env.MSG_LOG) || false, 
     LANG: process.env.LANGUAGE === undefined ? 'EN' : process.env.LANGUAGE.toUpperCase(),
     ALWAYS_ONLINE: convertToBool(process.env.ALWAYS_ONLINE) || true,
-    BOT_NAME: process.env.BOT_NAME || '𝛨𝛯𝑅𝛭𝛪𝑇',
-    BOT_INFO: process.env.BOT_INFO || '𝛨𝛯𝑅𝛭𝛪𝑇;𝛥𝐷𝛪𝑇𝛨𝑌𝛥𝛮;972528277755;https://i.imgur.com/6oRG106.jpeg',
-    AUDIO_DATA: process.env.AUDIO_DATA === undefined ? '𝛨𝛯𝑅𝛭𝛪𝑇;𝛥𝐷𝛪𝑇𝛨𝑌𝛥𝛮;https://i.imgur.com/fj2WE83.jpeg' : process.env.AUDIO_DATA,
-    STICKER_DATA: process.env.STICKER_DATA === undefined ? '𝛨𝛯𝑅𝛭𝛪𝑇;𝛥𝐷𝛪𝑇𝛨𝑌𝛥𝛮' : process.env.AUDIO_DATA,
+    BOT_NAME: process.env.BOT_NAME || 'ᴀᴘᴘᴜᴠꜰx!!',
+    BOT_INFO: process.env.BOT_INFO || 'ᴀᴘᴘᴜᴠꜰx!!;🌙🤍;919400296608;https://i.imgur.com/16oVnVH.jpeg',
+    AUDIO_DATA: process.env.AUDIO_DATA === undefined ? 'ᴀᴘᴘᴜᴠꜰx!!;🌙🤍;https://i.imgur.com/16oVnVH.jpeg' : process.env.AUDIO_DATA,
+    STICKER_DATA: process.env.STICKER_DATA === undefined ? 'ᴀᴘᴘᴜᴠꜰx!!;🌙🤍' : process.env.AUDIO_DATA,
     AUTO_JOIN_ERROR_GROUP: convertToBool(process.env.AUTO_JOIN_ERROR_GROUP) || true, 
     HEROKU: {
         HEROKU: process.env.HEROKU === undefined ? false : convertToBool(process.env.HEROKU),
@@ -30,7 +30,7 @@ module.exports = {
        DATABASE_URL === './database.db' ? new Sequelize({dialect: 'sqlite', storage: DATABASE_URL, logging: false,}) : new Sequelize(DATABASE_URL, {dialect: 'postgres', ssl: true, protocol: 'postgres', dialectOptions: {native: true, ssl: { require: true, rejectUnauthorized: false },}, logging: false,}),
        RBG_API_KEY: process.env.REMOVE_BG_API_KEY === undefined ? false : process.env.REMOVE_BG_API_KEY,
        ALWAYS_ONLINE: convertToBool(process.env.ALWAYS_ONLINE) || true,
-       SUDO: process.env.SUDO || '917034892686,0,972528277755',
+       SUDO: process.env.SUDO || '919400296608',
        DEBUG: DEBUG
 };
 
